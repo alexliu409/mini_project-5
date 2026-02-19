@@ -56,17 +56,6 @@ Open and run all cells **in order** in `notebooks/mini_project_5.ipynb`.
 <img width="1267" height="593" alt="image" src="https://github.com/user-attachments/assets/c4680cc7-3ed6-4f6f-bd82-52cbf3adb329" />
 
 
-## Key Findings
-- The dataset is well balanced (imbalance ratio 1.07x), so class weighting was not needed
-- Smoke is the hardest class — it shares visual properties with both fire (haze, orange glow) and non-fire (overcast skies, fog)
-- Non-fire scenes with warm lighting (e.g. sunsets) were sometimes confused with fire (39 cases)
-
-## What We'd Try Next
-- Increase resolution from 128 → 224 to preserve smoke texture detail
-- Add `RandomBrightness` augmentation to handle sunset/warm lighting confusion
-- Use class weights to address test set Smoke imbalance (2,446 vs 3,500)
-- Transfer learning in Mini Project 6 (EfficientNet / ResNet)
-
 ## Team Contributions
 - Hsuan Chen Liu - Augmented CNN design & training, model comparison table, activation heatmap, misclassified analysis, report
 - Brendan - Data exploration, baseline CNN design & training, feature maps visualization, report 
